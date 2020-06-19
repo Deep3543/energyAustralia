@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 var intent: Intent = Intent(this,Dashboard::class.java)
                 startActivity(intent)
                 finish()
-                //
+
             }
         },3000)
     }

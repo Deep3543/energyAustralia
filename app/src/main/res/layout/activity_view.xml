@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Imageinsert"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/viewer">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/TextVolunteerForm"
+            android:layout_width="400dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Electricity Bill Details"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/Lvall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>

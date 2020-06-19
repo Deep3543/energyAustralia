@@ -16,7 +16,6 @@ class Login : AppCompatActivity() {
 
             var id=etUsername.text.toString()
             var password=etpassword.text.toString()
-            //17BCA093
             if((id.equals("admin")) && (password.equals("admin"))){
                 var preference=getSharedPreferences("MyPref", Context.MODE_PRIVATE)
                 var editor=preference.edit()
@@ -25,7 +24,6 @@ class Login : AppCompatActivity() {
 
                 Toast.makeText(this,"Login Successfully", Toast.LENGTH_LONG).show()
                 var intent: Intent = Intent(this,Dashboard::class.java)
-                //17BCA093
                 startActivity(intent)
                 finish()
             }

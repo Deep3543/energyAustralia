@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:layout_constraintCircleRadius="50dp"
+    android:id="@+id/bottomsheet"
+    android:background="@drawable/login_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.BottomSheet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/ui" />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignEnd="@+id/insert"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/viewer" />
+
+        <TextView
+            android:id="@+id/insert_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert"
+            android:layout_marginStart="45dp"
+            android:text="INSERT DATA"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:text="VIEW DETAILS"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/insert_txt"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/exit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exit"
+            android:layout_marginStart="70dp"
+            android:text="EXIT"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/view_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/signout" />
+
+        <TextView
+            android:id="@+id/signout_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="65dp"
+            android:text="SIGNOUT"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
